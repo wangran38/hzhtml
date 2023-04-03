@@ -19,7 +19,7 @@
   <meta name="sogou_site_verification" content="ZKQmA3fOcE">
 </head>
 
-<body>
+<body id="app">
   <!--[if lte IE 9]><div class="browser">您的浏览器版本过低,为了更好的体验,建议使用谷歌浏览器或升级您的浏览器到IE9以上版本</div><![endif]-->
   <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="layout-container"><header class="header-container_1ivIQ"><div class="top_2TrCl"><div class="other-link_1xmDQ"><ul><li>我的门票</li> <li>展商名录</li> <li>我的展会</li> <li>我的行业</li> <li>
           排行榜
@@ -1447,8 +1447,8 @@
 <!--  <script type="text/javascript" src="static/js/z_stat.js"></script>-->
   <!-- 快商通聊天工具 -->
   <script type="text/javascript" src="static/js/ks.js" charset="utf-8"></script>
-
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <div id="app">{{ message }}</div>
 
@@ -1460,8 +1460,34 @@
               return {
                   message: 'Hello Vue!'
               }
+          },
+          mounted() {
+              console.log(1)
+              this.pageChange(1);//首次加载第一页
+          },
+          methods: {
+              pageChange: function (pageNo) {
+                  //翻页会触发此事件
+                  axios({
+                      url: "http://linfeng.988cj.com/api/cglist",
+                      method: "post",
+                      headers: {
+                          'Content-Type': 'application/json; charset=utf-8'
+                      },
+                      data: {
+                          pageNo: pageNo,
+                          pageSize: this.pageSize
+                      }
+                  }).then(response => (this.pageInfo = response.data.d)).
+                  then((response) => {
+                      //console.log(response);
+                  }).catch((error) => { // 请求失败处理
+                      console.log(error);
+                  });
+              }
           }
       }).mount('#app')
+
   </script>
 </body>
 
