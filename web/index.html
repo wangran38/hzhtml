@@ -266,10 +266,7 @@
                         <div class="hot_title">
                             <img src="static/picture/fire.4d53a20.png">
                             <div>推荐热门展会</div>
-                            <div class="more"><a href="/exhibition/?sort=hot" title="国际展会" target="_blank">
-                                更多
-                                <i class="el-icon-arrow-right"></i></a>
-                            </div>
+                            <div class="more"><a href="/exhibition/?sort=hot" title="国际展会" target="_blank">更多<i class="el-icon-arrow-right"></i></a></div>
                         </div>
                         <div class="el-carousel el-carousel--vertical">
                             <div class="el-carousel__container" style="height:330px;">
@@ -314,6 +311,7 @@
                                                     天</div>
                                             </div>
                                         </div>
+
                                         <div class="remind_item goods_exh" data-v-21e4ee79>
                                             <div class="exh_image" data-v-21e4ee79>
                                                 <a href="/exhibition/712.html" title="上海宝马展 Bauma China" target="_blank" data-v-21e4ee79>
@@ -500,7 +498,7 @@
                                         <div class="remind_item goods_exh" data-v-21e4ee79>
                                             <div class="exh_image" data-v-21e4ee79>
                                                 <a href="/exhibition/981.html" title="中国上海世界制药原料展" target="_blank" data-v-21e4ee79>
-                                                    <img alt="中国上海世界制药原料展" class="cover" data-v-21e4ee79>
+                                                    <img alt="中国上海世界制药原料展" class="cover" src="static/images/zAbQm4beMcQi66Mx6KwfPyRDY8fPGShp.jpg">
                                                 </a>
                                                 <img alt="hot" src="static/picture/hot.4391b0c.png" class="hot-icon" data-v-21e4ee79>
                                             </div>
@@ -564,13 +562,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="el-carousel__item" style="transform:translateY(0px) scale(1);ms-transform:translateY(0px) scale(1);webkit-transform:translateY(0px) scale(1);display:none;">
+
+                                <div class="el-carousel__item" style="">
                                     <!---->
                                     <div class="recommend_list">
-                                        <div class="remind_item goods_exh" data-v-21e4ee79>
+                                        <div class="remind_item goods_exh"  v-for="dataVal in recommendList">
                                             <div class="exh_image" data-v-21e4ee79>
-                                                <a href="/exhibition/6527.html" title="深圳华南国际工业展-华南工博会" target="_blank" data-v-21e4ee79>
-                                                    <img alt="深圳华南国际工业展-华南工博会" class="cover" data-v-21e4ee79>
+
+                                                <a href="/" title="$dataVal.title" target="_blank" >
+                                                    <img alt="{{ dataVal.title }}" class="cover" src="static/images/1584879c401f65a6aaf1d96cb96fce45.jpg">
                                                 </a>
                                                 <img alt="hot" src="static/picture/hot.4391b0c.png" class="hot-icon" data-v-21e4ee79>
                                             </div>
@@ -579,9 +579,7 @@
                                             </div>
                                             <div class="name_remind" data-v-21e4ee79><i data-tag="推荐" class="tag" data-v-21e4ee79>
                                                 推荐
-                                            </i>  <a href="/exhibition/6527.html" title="深圳华南国际工业展-华南工博会" target="_blank" data-v-21e4ee79>
-                                                深圳华南国际工业展-华南工博会
-                                            </a>
+                                            </i>  <a href="/exhibition/6527.html" title="{{ dataVal.title }}" target="_blank" data-v-21e4ee79>{{ dataVal.title }}</a>
                                             </div>
                                             <div class="time_remind" data-v-21e4ee79>
                                                 <time data-v-21e4ee79>2023.06.27-06.29</time>
@@ -603,107 +601,7 @@
                                                     天</div>
                                             </div>
                                         </div>
-                                        <div class="remind_item goods_exh" data-v-21e4ee79>
-                                            <div class="exh_image" data-v-21e4ee79>
-                                                <a href="/exhibition/3256.html" title="中国光博会-深圳光博会CIOE" target="_blank" data-v-21e4ee79>
-                                                    <img alt="中国光博会-深圳光博会CIOE" class="cover" data-v-21e4ee79>
-                                                </a>
-                                                <img alt="hot" src="static/picture/hot.4391b0c.png" class="hot-icon" data-v-21e4ee79>
-                                            </div>
-                                            <div class="En" data-v-21e4ee79>
-                                                <div class="En_name" data-v-21e4ee79>CIOE</div>
-                                            </div>
-                                            <div class="name_remind" data-v-21e4ee79><i data-tag="热门" class="tag" data-v-21e4ee79>
-                                                热门
-                                            </i>  <a href="/exhibition/3256.html" title="中国光博会-深圳光博会CIOE" target="_blank" data-v-21e4ee79>
-                                                中国光博会-深圳光博会CIOE
-                                            </a>
-                                            </div>
-                                            <div class="time_remind" data-v-21e4ee79>
-                                                <time data-v-21e4ee79>2023.09.06-09.08</time>
-                                                <div class="hot" data-v-21e4ee79>
-                                                    <img alt src="static/picture/fire.4d53a20.png" data-v-21e4ee79>
-                                                    <div class="hot_num" data-v-21e4ee79>4.4w</div>
-                                                </div>
-                                            </div>
-                                            <!---->
-                                            <div class="btn_remind" data-v-21e4ee79>
-                                                <div class="distance" data-v-21e4ee79>距离 <span data-v-21e4ee79>167</span>
-                                                    天</div>
-                                            </div>
-                                        </div>
-                                        <div class="remind_item goods_exh" data-v-21e4ee79>
-                                            <div class="exh_image" data-v-21e4ee79>
-                                                <a href="/exhibition/759.html" title="德国慕尼黑电子展览会" target="_blank" data-v-21e4ee79>
-                                                    <img alt="德国慕尼黑电子展览会" class="cover" data-v-21e4ee79>
-                                                </a>
-                                                <img alt="hot" src="static/picture/hot.4391b0c.png" class="hot-icon" data-v-21e4ee79>
-                                            </div>
-                                            <div class="En" data-v-21e4ee79>
-                                                <div class="En_name" data-v-21e4ee79>Electronica</div>
-                                            </div>
-                                            <div class="name_remind" data-v-21e4ee79><i data-tag="热门" class="tag" data-v-21e4ee79>
-                                                热门
-                                            </i>  <a href="/exhibition/759.html" title="德国慕尼黑电子展览会" target="_blank" data-v-21e4ee79>
-                                                德国慕尼黑电子展览会
-                                            </a>
-                                            </div>
-                                            <div class="time_remind" data-v-21e4ee79>
-                                                <time data-v-21e4ee79>2024.11.12-11.15</time>
-                                                <div class="hot" data-v-21e4ee79>
-                                                    <img alt src="static/picture/fire.4d53a20.png" data-v-21e4ee79>
-                                                    <div class="hot_num" data-v-21e4ee79>1.4w</div>
-                                                </div>
-                                            </div>
-                                            <div class="tag-container" style="margin-top:10px;" data-v-7d03238e data-v-21e4ee79>
-                                                <!---->
-                                                <!---->
-                                                <!---->
-                                                <div class="follow" data-v-7d03238e>展位咨询</div>
-                                                <div class="follow" data-v-7d03238e>门票预订</div>
-                                                <div class="follow" data-v-7d03238e>展商名录</div>
-                                            </div>
-                                            <div class="btn_remind" data-v-21e4ee79>
-                                                <div class="distance" data-v-21e4ee79>距离 <span data-v-21e4ee79>600</span>
-                                                    天</div>
-                                            </div>
-                                        </div>
-                                        <div class="remind_item goods_exh" data-v-21e4ee79>
-                                            <div class="exh_image" data-v-21e4ee79>
-                                                <a href="/exhibition/1647.html" title="中国（北京）国际机床展览会" target="_blank" data-v-21e4ee79>
-                                                    <img alt="中国（北京）国际机床展览会" class="cover" data-v-21e4ee79>
-                                                </a>
-                                                <img alt="hot" src="static/picture/hot.4391b0c.png" class="hot-icon" data-v-21e4ee79>
-                                            </div>
-                                            <div class="En" data-v-21e4ee79>
-                                                <div class="En_name" data-v-21e4ee79>CIMT</div>
-                                            </div>
-                                            <div class="name_remind" data-v-21e4ee79><i data-tag="热门" class="tag" data-v-21e4ee79>
-                                                热门
-                                            </i>  <a href="/exhibition/1647.html" title="中国（北京）国际机床展览会" target="_blank" data-v-21e4ee79>
-                                                中国（北京）国际机床展览会
-                                            </a>
-                                            </div>
-                                            <div class="time_remind" data-v-21e4ee79>
-                                                <time data-v-21e4ee79>2023.04.10-04.15</time>
-                                                <div class="hot" data-v-21e4ee79>
-                                                    <img alt src="static/picture/fire.4d53a20.png" data-v-21e4ee79>
-                                                    <div class="hot_num" data-v-21e4ee79>12.6w</div>
-                                                </div>
-                                            </div>
-                                            <div class="tag-container" style="margin-top:10px;" data-v-7d03238e data-v-21e4ee79>
-                                                <!---->
-                                                <!---->
-                                                <!---->
-                                                <div class="follow" data-v-7d03238e>展位咨询</div>
-                                                <div class="follow" data-v-7d03238e>门票预订</div>
-                                                <div class="follow" data-v-7d03238e>展商名录</div>
-                                            </div>
-                                            <div class="btn_remind" data-v-21e4ee79>
-                                                <div class="distance" data-v-21e4ee79>距离 <span data-v-21e4ee79>18</span>
-                                                    天</div>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                                 <div class="el-carousel__item" style="transform:translateY(0px) scale(1);ms-transform:translateY(0px) scale(1);webkit-transform:translateY(0px) scale(1);display:none;">
@@ -12606,12 +12504,14 @@
     const {
         createApp
     } = Vue
+
     createApp({
         data() {
             return {
                 message: 'Hello Vue!',
                 items: [{ message: 'Foo' }, { message: 'Bar' }],
                 categoryList: [],
+                recommendList: []
             }
         },
         mounted() {
@@ -12635,6 +12535,22 @@
                 then((response) => {
                     this.categoryList = response.data.listdata
                     console.log(response.data.listdata);
+                }).catch((error) => { // 请求失败处理
+                    console.log(error);
+                });
+
+                axios({
+                    url: "http://linfeng.988cj.com/api/exlist",
+                    method: "post",
+                    headers: {
+                        'Content-Type': 'application/json; charset=utf-8'
+                    },
+                    data: {
+                        pageSize: this.pageSize
+                    }
+                }).then(response => (this.pageInfo = response.data)).
+                then((response) => {
+                    this.recommendList = response.data.listdata
                 }).catch((error) => { // 请求失败处理
                     console.log(error);
                 });
