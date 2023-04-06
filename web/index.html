@@ -158,21 +158,8 @@
                                             <p>{{ cateVal.title }}</p>
                                         </div>
                                     </div> <span class="arrow"></span>
-                                    <div class="hover_content" style="transform:translateX(-8%);">
-                                        <a href="/" target="_blank" class="hover_content_item">车</a>
-                                        <a href="/" target="_blank" class="hover_content_item">电动车</a>
-                                        <a href="/" target="_blank" class="hover_content_item">改装车</a>
-                                        <a href="/" target="_blank" class="hover_content_item">汽配</a>
-                                        <a href="/" target="_blank" class="hover_content_item">摩托车</a>
-                                        <a href="/" target="_blank" class="hover_content_item">轮胎轮毂</a>
-                                        <a href="/" target="_blank" class="hover_content_item">卡车</a>
-                                        <a href="/" target="_blank" class="hover_content_item">自行车</a>
-                                        <a href="/" target="_blank" class="hover_content_item">房车</a>
-                                        <a href="/" target="_blank" class="hover_content_item">智慧停车</a>
-                                        <a href="/" target="_blank" class="hover_content_item">客车巴士</a>
-                                        <a href="/" target="_blank" class="hover_content_item">无人驾驶</a>
-                                        <a href="/" target="_blank" class="hover_content_item">汽车测试</a>
-                                        <a href="/" target="_blank" class="hover_content_item">新能源汽车</a>
+                                    <div class="hover_content" style="transform:translateX(-8%);" >
+                                            <a href="/" target="_blank" class="hover_content_item" v-for="childItem in cateVal.Children">{{ childItem.title }}</a>
                                     </div>
                                 </div>
 
@@ -570,7 +557,7 @@
                                             <div class="exh_image" data-v-21e4ee79>
 
                                                 <a href="/" title="$dataVal.title" target="_blank" >
-                                                    <img alt="{{ dataVal.title }}" class="cover" src="static/images/1584879c401f65a6aaf1d96cb96fce45.jpg">
+                                                    <img :alt="dataVal.title" class="cover" src="static/images/1584879c401f65a6aaf1d96cb96fce45.jpg">
                                                 </a>
                                                 <img alt="hot" src="static/picture/hot.4391b0c.png" class="hot-icon" data-v-21e4ee79>
                                             </div>
@@ -579,7 +566,7 @@
                                             </div>
                                             <div class="name_remind" data-v-21e4ee79><i data-tag="推荐" class="tag" data-v-21e4ee79>
                                                 推荐
-                                            </i>  <a href="/exhibition/6527.html" title="{{ dataVal.title }}" target="_blank" data-v-21e4ee79>{{ dataVal.title }}</a>
+                                            </i>  <a href="/exhibition/6527.html" :title="dataVal.title" target="_blank" data-v-21e4ee79>{{ dataVal.title }}</a>
                                             </div>
                                             <div class="time_remind" data-v-21e4ee79>
                                                 <time data-v-21e4ee79>2023.06.27-06.29</time>
@@ -12522,7 +12509,7 @@
             pageChange: function (pageNo) {
                 //翻页会触发此事件
                 axios({
-                    url: "http://linfeng.988cj.com/api/cglist",
+                    url: "http://linfeng.988cj.com/api/cgtree",
                     method: "post",
                     headers: {
                         'Content-Type': 'application/json; charset=utf-8'

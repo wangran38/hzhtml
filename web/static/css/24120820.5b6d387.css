@@ -978,7 +978,7 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     color: #fff;
 }
 
-.goods-item-container[data-v-1d86f310] {
+.goods-item-container {
     width: 588px;
     background: #fff;
     border-radius: 6px;
@@ -987,18 +987,18 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     display: flex;
 }
 
-.goods-item-container:hover .exh_image .cover[data-v-1d86f310] {
+.goods-item-container:hover .exh_image .cover {
     transform: scale(1.2);
 }
 
-.goods-item-container .exh-info-wrap[data-v-1d86f310] {
+.goods-item-container .exh-info-wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: calc(100% - 212px);
 }
 
-.goods-item-container .exh_image[data-v-1d86f310] {
+.goods-item-container .exh_image {
     width: 200px;
     height: 156px;
     border-radius: 4px;
@@ -1011,14 +1011,14 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     align-items: center;
 }
 
-.goods-item-container .exh_image img[data-v-1d86f310] {
+.goods-item-container .exh_image img {
     width: 100%;
     height: auto;
     border-radius: 4px;
     transition: all .3s;
 }
 
-.goods-item-container .exh_image .hot-icon[data-v-1d86f310] {
+.goods-item-container .exh_image .hot-icon {
     width: 32px;
     height: 20px;
     position: absolute;
@@ -1026,12 +1026,12 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     left: 0;
 }
 
-.goods-item-container .En[data-v-1d86f310] {
+.goods-item-container .En {
     display: flex;
     margin-bottom: 8px;
 }
 
-.goods-item-container .En .En_name[data-v-1d86f310] {
+.goods-item-container .En .En_name {
     font-size: 16px;
     flex: 1;
     text-overflow: ellipsis;
@@ -1039,7 +1039,7 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     white-space: nowrap;
 }
 
-.goods-item-container .name_remind[data-v-1d86f310] {
+.goods-item-container .name_remind {
     font-size: 18px;
     color: #333;
     letter-spacing: 1px;
@@ -1049,14 +1049,14 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     align-items: center;
 }
 
-.goods-item-container .name_remind a[data-v-1d86f310] {
+.goods-item-container .name_remind a {
     width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.goods-item-container .name_remind .tag[data-v-1d86f310] {
+.goods-item-container .name_remind .tag {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1072,19 +1072,19 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     cursor: pointer;
 }
 
-.goods-item-container .name_remind .tag[data-tag=推荐][data-v-1d86f310] {
+.goods-item-container .name_remind .tag[data-tag=推荐] {
     background: linear-gradient(#ff6337,#ff381a);
 }
 
-.goods-item-container .name_remind .tag[data-tag=精选][data-v-1d86f310] {
+.goods-item-container .name_remind .tag[data-tag=精选] {
     background: linear-gradient(#39dd80,#1cb84a);
 }
 
-.goods-item-container .name_remind .tag[data-tag=热门][data-v-1d86f310] {
+.goods-item-container .name_remind .tag[data-tag=热门] {
     background: linear-gradient(#37b0fe,#1d7cfe);
 }
 
-.goods-item-container .time_remind[data-v-1d86f310] {
+.goods-item-container .time_remind {
     font-size: 17px;
     color: #333;
     margin-bottom: 20px;
@@ -1092,12 +1092,12 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     align-items: center;
 }
 
-.goods-item-container .time_remind time[data-v-1d86f310] {
+.goods-item-container .time_remind time {
     font-family: PingFangSC-Semibold,PingFang SC,sans-serif;
     font-weight: 700;
 }
 
-.goods-item-container .time_remind .dynamic-tag[data-v-1d86f310] {
+.goods-item-container .time_remind .dynamic-tag {
     font-size: 14px;
     background: #faad14;
     color: #fff;
@@ -1106,55 +1106,55 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     border-radius: 4px;
 }
 
-.goods-item-container .hot[data-v-1d86f310] {
+.goods-item-container .hot {
     display: flex;
     align-items: center;
 }
 
-.goods-item-container .hot img[data-v-1d86f310] {
+.goods-item-container .hot img {
     height: 15px;
     width: auto;
     margin-right: 5px;
 }
 
-.goods-item-container .hot .hot_num[data-v-1d86f310] {
+.goods-item-container .hot .hot_num {
     font-size: 16px;
     color: #333;
     white-space: nowrap;
 }
 
-.goods-item-container .btn_remind[data-v-1d86f310] {
+.goods-item-container .btn_remind {
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
 
-.goods-item-container .btn_remind .distance[data-v-1d86f310] {
+.goods-item-container .btn_remind .distance {
     font-size: 16px;
     color: #333;
     margin-left: auto;
 }
 
-.goods-item-container .btn_remind .distance span[data-v-1d86f310] {
+.goods-item-container .btn_remind .distance span {
     color: #ff8600;
     font-size: 16px;
     font-weight: 700;
 }
 
-.goods-item-container .scale-remind[data-v-1d86f310] {
+.goods-item-container .scale-remind {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
 }
 
-.goods-item-container .price-wrap[data-v-1d86f310] {
+.goods-item-container .price-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 6px 0;
 }
 
-.goods-item-container .price-wrap .price-value[data-v-1d86f310] {
+.goods-item-container .price-wrap .price-value {
     display: inline-flex;
     border: 1px solid #d7d7d7;
     padding: 2px 4px;
@@ -1163,7 +1163,7 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     max-width: 100%;
 }
 
-.goods-item-container .price-wrap .price-value span[data-v-1d86f310] {
+.goods-item-container .price-wrap .price-value span {
     display: inline-block;
     font-size: 14px;
     width: 100%;
@@ -1172,12 +1172,12 @@ footer .link-container_1O0vk .link-content_1CfTU .link-list_2skcT li a {
     overflow: hidden;
 }
 
-.goods-item-container .btn-like-remind[data-v-1d86f310] {
+.goods-item-container .btn-like-remind {
     display: flex;
     margin: 20px 0 0;
 }
 
-.goods-item-container .btn-like-remind .btn-like[data-v-1d86f310] {
+.goods-item-container .btn-like-remind .btn-like {
     margin-left: auto;
     font-size: 14px;
     color: #e50113;
