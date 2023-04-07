@@ -398,13 +398,13 @@
                         <div class="goods-item-container goods_exh" v-for="dataVal in recommendList">
                             <div class="exh_image" data-v-1d86f310>
                                 <a href="/" :title="dataVal.title" target="_blank" data-v-1d86f310>
-                                    <img :alt="dataVal.title" class="cover" data-v-1d86f310>
+                                    <img alt="dataVal.title" :src="dataVal.image" class="cover" data-v-1d86f310>
                                 </a>
                             </div>
                             <div class="exh-info-wrap" data-v-1d86f310>
                                 <div class="name_remind" data-v-1d86f310><i data-tag="热门" class="tag" data-v-1d86f310>
                                     热门
-                                </i>  <a href="/exhibition/96.html" :title="dataVal.title" target="_blank" data-v-1d86f310></a>
+                                </i>  <a href="/exhibition/96.html" :title="dataVal.title" target="_blank" data-v-1d86f310>{{ dataVal.title }}</a>
                                 </div>
                                 <div class="En" data-v-1d86f310>
                                     <div class="En_name" data-v-1d86f310>{{ dataVal.en_title }}</div>
@@ -418,7 +418,7 @@
                                 </div>
                                 <div class="btn_remind" data-v-1d86f310>
                                     <div class="hot" data-v-1d86f310>
-                                        <img alt src="static/picture/fire.4d53a20.png" data-v-1d86f310>
+                                        <img :src="dataVal.image" data-v-1d86f310>
                                         <div class="hot_num" data-v-1d86f310>1.1w人浏览</div>
                                     </div>
                                     <div class="distance" style="font-size: 14px" data-v-1d86f310>距离开展还有 <span style="font-size: 16px" data-v-1d86f310>91</span>
