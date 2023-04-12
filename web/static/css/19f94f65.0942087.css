@@ -274,7 +274,7 @@
     margin-left: 2px;
 }
 
-.brand[data-v-3b9ce2d2] {
+.brand{
     background: #fff;
     color: #333;
     width: 1190px;
@@ -284,37 +284,37 @@
     border-radius: 6px;
 }
 
-.pdf-container[data-v-3b9ce2d2] {
+.pdf-container{
     width: 1190px;
     margin: 16px auto 32px;
     display: flex;
 }
 
-.pdf-container .pdf-aside[data-v-3b9ce2d2],.pdf-container .pdf-wrapper[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside,.pdf-container .pdf-wrapper{
     border-radius: 6px;
 }
 
-.pdf-container .pdf-wrapper[data-v-3b9ce2d2] {
+.pdf-container .pdf-wrapper{
     flex: 1;
 }
 
-.pdf-container .pdf-wrapper .pdf-view[data-v-3b9ce2d2] {
+.pdf-container .pdf-wrapper .pdf-view{
     margin-top: 0;
     padding: 32px 24px 28px;
 }
 
-.pdf-container .pdf-wrapper .pdf-view-head[data-v-3b9ce2d2] {
+.pdf-container .pdf-wrapper .pdf-view-head{
     display: flex;
     align-items: center;
 }
 
-.pdf-container .pdf-wrapper .pdf-view-head .sub-title[data-v-3b9ce2d2] {
+.pdf-container .pdf-wrapper .pdf-view-head .sub-title{
     color: #666;
     font-size: 14px;
     margin: 0 0 12px 10px;
 }
 
-.pdf-container .pdf-wrapper .pdf-head[data-v-3b9ce2d2] {
+.pdf-container .pdf-wrapper .pdf-head{
     font-size: 22px;
     font-weight: 700;
     color: #000;
@@ -325,23 +325,23 @@
     text-align: center;
 }
 
-.pdf-container .section-area[data-v-3b9ce2d2] {
+.pdf-container .section-area{
     padding: 24px 24px 20px;
     background: #fff;
     margin: 12px 0;
     border-radius: 6px;
 }
 
-.pdf-container .pdf-list[data-v-3b9ce2d2] {
+.pdf-container .pdf-list{
     display: flex;
     flex-wrap: wrap;
 }
 
-.pdf-container .pdf-item__active[data-v-3b9ce2d2] {
+.pdf-container .pdf-item__active{
     border: 1px solid #f00000!important;
 }
 
-.pdf-container .pdf-item[data-v-3b9ce2d2] {
+.pdf-container .pdf-item{
     display: flex;
     flex-direction: column;
     width: 252px;
@@ -355,11 +355,11 @@
     margin-bottom: 10px;
 }
 
-.pdf-container .pdf-item[data-v-3b9ce2d2]:nth-child(3n) {
+.pdf-container .pdf-item:nth-child(3n) {
     margin-right: 0;
 }
 
-.pdf-container .pdf-item .pdf-cover[data-v-3b9ce2d2] {
+.pdf-container .pdf-item .pdf-cover{
     width: 100%;
     height: 270px;
     border-radius: 6px;
@@ -368,19 +368,19 @@
     justify-content: center;
 }
 
-.pdf-container .pdf-item .pdf-cover img[data-v-3b9ce2d2] {
+.pdf-container .pdf-item .pdf-cover img{
     height: 270px;
     border-radius: 6px;
 }
 
-.pdf-container .pdf-item .pdf-name[data-v-3b9ce2d2] {
+.pdf-container .pdf-item .pdf-name{
     letter-spacing: 1px;
     font-size: 16px;
     margin: 12px 0 6px;
     word-break: break-all;
 }
 
-.pdf-container .pdf-item .pdf-has[data-v-3b9ce2d2] {
+.pdf-container .pdf-item .pdf-has{
     height: 16px;
     margin: 6px 0;
     font-size: 14px;
@@ -388,25 +388,25 @@
     justify-content: space-between;
 }
 
-.pdf-container .pdf-item .pdf-has .has-tag[data-v-3b9ce2d2] {
+.pdf-container .pdf-item .pdf-has .has-tag{
     line-height: 1;
 }
 
-.pdf-container .pdf-item .pdf-bottom[data-v-3b9ce2d2] {
+.pdf-container .pdf-item .pdf-bottom{
     display: flex;
     justify-content: space-between;
 }
 
-.pdf-container .pdf-item .pdf-bottom .pdf-price[data-v-3b9ce2d2] {
+.pdf-container .pdf-item .pdf-bottom .pdf-price{
     color: #ed3e01;
 }
 
-.pdf-container .pdf-item .pdf-bottom .preview-btn[data-v-3b9ce2d2] {
+.pdf-container .pdf-item .pdf-bottom .preview-btn{
     color: #1890ff;
     font-size: 15px;
 }
 
-.pdf-container .pdf-item .pdf-bottom .pdf-download[data-v-3b9ce2d2] {
+.pdf-container .pdf-item .pdf-bottom .pdf-download{
     padding: 2px 6px;
     color: #1890ff;
     font-size: 14px;
@@ -414,14 +414,14 @@
     border: 1px solid #1890ff;
 }
 
-.pdf-container .tips_box[data-v-3b9ce2d2] {
+.pdf-container .tips_box{
     border: 1px solid #fee0b0;
     background: #fff;
     margin: 12px 0;
     padding: 0 0 8px;
 }
 
-.pdf-container .tips_box .tips-label[data-v-3b9ce2d2] {
+.pdf-container .tips_box .tips-label{
     font-size: 16px;
     font-weight: 700;
     color: #fe9c00;
@@ -430,7 +430,7 @@
     padding: 12px 16px;
 }
 
-.pdf-container .tips_box .tips-value[data-v-3b9ce2d2] {
+.pdf-container .tips_box .tips-value{
     font-size: 14px;
     font-weight: 400;
     color: #666;
@@ -439,12 +439,12 @@
     line-height: 1.6;
 }
 
-.pdf-container .tips_box .tips-value i[data-v-3b9ce2d2] {
+.pdf-container .tips_box .tips-value i{
     color: #e50113;
     font-style: normal;
 }
 
-.pdf-container .tips_box .top-tips[data-v-3b9ce2d2] {
+.pdf-container .tips_box .top-tips{
     font-size: 14px;
     color: #e50113;
     text-indent: 1em;
@@ -452,17 +452,17 @@
     margin: 16px 0;
 }
 
-.pdf-container .tips_box .top-tips p[data-v-3b9ce2d2] {
+.pdf-container .tips_box .top-tips p{
     padding: 4px 0;
 }
 
-.pdf-container .submit[data-v-3b9ce2d2] {
+.pdf-container .submit{
     width: 100%;
     height: 40px;
     margin: 24px auto;
 }
 
-.pdf-container .submit .submit-btn[data-v-3b9ce2d2] {
+.pdf-container .submit .submit-btn{
     width: 100%;
     height: 55px;
     background: linear-gradient(270deg,#f00000,#ff4270);
@@ -472,28 +472,28 @@
     font-weight: 400;
 }
 
-.pdf-container .pdf-aside[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside{
     width: 350px;
     flex-shrink: 0;
     margin-left: 16px;
 }
 
-.pdf-container .pdf-aside .exh_item[data-v-3b9ce2d2]:last-child {
+.pdf-container .pdf-aside .exh_item:last-child {
     border: none;
 }
 
-.pdf-container .pdf-aside .aside-detail[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside .aside-detail{
     background: #fff;
     border-radius: 6px;
 }
 
-.pdf-container .pdf-aside .price_box[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside .price_box{
     margin: 12px 0;
     border-radius: 6px;
     overflow: hidden;
 }
 
-.pdf-container .pdf-aside .price_box .count_price[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside .price_box .count_price{
     background: #fff;
     font-size: 18px;
     color: #333;
@@ -503,46 +503,46 @@
     justify-content: space-between;
 }
 
-.pdf-container .pdf-aside .price_box .count_price .price[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside .price_box .count_price .price{
     font-size: 22px;
     font-weight: 500;
     color: #f60;
     border-bottom: 1px dashed #f60;
 }
 
-.pdf-container .pdf-aside .price_box .count_price .price i[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside .price_box .count_price .price i{
     font-style: normal;
     font-size: 12px;
     font-weight: 400;
 }
 
-.pdf-container .pdf-aside .pdf-tip-list[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside .pdf-tip-list{
     border-radius: 6px;
     overflow: hidden;
 }
 
-.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item{
     background: #fff;
     padding: 16px 16px 10px;
     border-bottom: 1px solid #dfdfdf;
 }
 
-.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item[data-v-3b9ce2d2]:last-child {
+.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item:last-child {
     border: none;
 }
 
-.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item .pdf-head[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item .pdf-head{
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item .pdf-head .el-icon-circle-check[data-v-3b9ce2d2],.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item .pdf-head .el-icon-circle-close[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item .pdf-head .el-icon-circle-check,.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item .pdf-head .el-icon-circle-close{
     font-size: 17px;
     font-weight: 700;
     color: #e50113;
 }
 
-.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item .tip-value-item[data-v-3b9ce2d2] {
+.pdf-container .pdf-aside .pdf-tip-list .pdf-tip-item .tip-value-item{
     font-size: 14px;
     margin-bottom: 4px;
     line-height: 1.5;
@@ -594,23 +594,23 @@
     justify-content: space-between;
 }
 
-.pdf-container[data-v-aed57e30] {
+.pdf-container{
     width: 1190px;
     margin: 16px auto 64px;
     display: flex;
     overflow: hidden;
 }
 
-.pdf-container .pdf-aside[data-v-aed57e30],.pdf-container .pdf-wrapper[data-v-aed57e30] {
+.pdf-container .pdf-aside,.pdf-container .pdf-wrapper{
     border-radius: 6px;
 }
 
-.pdf-container .pdf-wrapper[data-v-aed57e30] {
+.pdf-container .pdf-wrapper{
     flex: 1;
     background: #fff;
 }
 
-.pdf-container .pdf-wrapper .pdf-header[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .pdf-header{
     display: flex;
     justify-content: space-between;
     padding: 35px 0 16px;
@@ -618,19 +618,19 @@
     margin: 0 28px 20px;
 }
 
-.pdf-container .pdf-wrapper .pdf-header .title[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .pdf-header .title{
     font-size: 20px;
     line-height: 32px;
     color: #333;
 }
 
-.pdf-container .pdf-wrapper .pdf-list[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .pdf-list{
     padding: 0 28px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.pdf-container .pdf-wrapper .pdf-list .pdf-item[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .pdf-list .pdf-item{
     display: flex;
     flex-direction: column;
     width: 258px;
@@ -644,40 +644,40 @@
     margin-bottom: 10px;
 }
 
-.pdf-container .pdf-wrapper .pdf-list .pdf-item[data-v-aed57e30]:nth-child(3n) {
+.pdf-container .pdf-wrapper .pdf-list .pdf-item:nth-child(3n) {
     margin-right: 0;
 }
 
-.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-cover[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-cover{
     width: 100%;
     height: 270px;
     border-radius: 6px;
     overflow: hidden;
 }
 
-.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-cover img[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-cover img{
     width: 100%;
     height: 270px;
     border-radius: 6px;
 }
 
-.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-name[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-name{
     letter-spacing: 1px;
     font-size: 16px;
     padding: 12px 0;
     word-break: break-all;
 }
 
-.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-bottom[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-bottom{
     display: flex;
     justify-content: space-between;
 }
 
-.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-bottom .pdf-price[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-bottom .pdf-price{
     color: #ed3e01;
 }
 
-.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-bottom .pdf-download[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .pdf-list .pdf-item .pdf-bottom .pdf-download{
     padding: 2px 6px;
     color: #1890ff;
     font-size: 14px;
@@ -685,16 +685,16 @@
     border: 1px solid #1890ff;
 }
 
-.pdf-container .pdf-wrapper .section-area[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .section-area{
     padding: 32px 28px 0;
 }
 
-.pdf-container .pdf-wrapper .submit[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .submit{
     width: 100%;
     margin: 24px auto;
 }
 
-.pdf-container .pdf-wrapper .submit .submit-btn[data-v-aed57e30] {
+.pdf-container .pdf-wrapper .submit .submit-btn{
     width: 100%;
     height: 55px;
     background: linear-gradient(270deg,#f00000,#ff4270);
@@ -704,7 +704,7 @@
     font-weight: 400;
 }
 
-.pdf-container .pdf-aside[data-v-aed57e30] {
+.pdf-container .pdf-aside{
     width: 324px;
     flex-shrink: 0;
     margin-left: 16px;
@@ -712,7 +712,7 @@
     background: #fff;
 }
 
-.pdf-container .pdf-aside .exh_item[data-v-aed57e30]:last-child {
+.pdf-container .pdf-aside .exh_item:last-child {
     border: none;
 }
 

@@ -50,62 +50,33 @@
                             <li>展商名录</li>
                             <li>我的展会</li>
                             <li>我的行业</li>
-                            <!---->
-                            <!---->
+                            <li>排行榜</li>
+                            <li>网站地图</li>
                             <li class="red_2YQFh">登录/注册</li>
-                            <!---->
-                            <!---->
                         </ul>
                     </div>
                 </div>
                 <menu class="menu_3TqT3">
-                    <a href="/" title="展会网" class="nuxt-link-active">
+                    <a href="/" aria-current="page" title="展会网" class="nuxt-link-exact-active nuxt-link-active">
                         <div class="el-icon-logo"></div>
                     </a>
                     <div class="list_iyLkn">
                         <ul>
-                            <li style="display:;"><a href="/" title="展会网" target="_blank">
-                                首页
-                            </a>
-                            </li>
-                            <li class="active_aaQBA" style="display:;"><a href="/exhibition-0-0-1-0-0-0-1/" title="国内展会" target="_blank">
-                                国内展会
-                            </a>
-                            </li>
-                            <li style="display:;"><a href="/exhibition/" title="国际展会" target="_blank">
-                                国际展会
-                            </a>
-                            </li>
-                            <li style="display:;"><a href="/information/" title="展会资讯" target="_blank">
-                                展会资讯
-                            </a>
-                            </li>
-                            <li style="display:;"><a href="/pavilion/" title="会展中心" target="_blank">
-                                会展中心
-                            </a>
-                            </li>
-                            <li style="display:;"><a href="/cooperation.html" title="展会合作" target="_blank">
-                                展会合作
-                            </a>
-                            </li>
-                            <li style="display:none;"><a href="/company/" title="参展企业" target="_blank">
-                                参展企业
-                            </a>
-                            </li>
+                            <li class="active_aaQBA" style="display:;"><a href="/" title="展会网" target="_self">首页</a></li>
+                            <li style="display:;"><a href="/huizhan.html" title="国内展会" target="_self">国内展会</a></li>
+                            <li style="display:;"><a href="/huizhan.html" title="国际展会" target="_self"> 国际展会 </a></li>
+                            <li style="display:;"><a href="/huizhan.html" title="展会资讯" target="_self"> 展会资讯 </a></li>
+                            <li style="display:;"><a href="/huizhan.html" title="会展中心" target="_self"> 会展中心 </a></li>
+                            <li style="display:;"><a href="/cooperation.html" title="展会合作" target="_self"> 展会合作 </a></li>
+                            <li style="display:none;"><a href="/company/" title="参展企业" target="_self"> 参展企业 </a></li>
                         </ul>
                     </div>
                     <div class="search-container_1XI3Z">
                         <div class="el-input search-input_1Jzs0">
-                            <!---->
                             <input type="text" autocomplete="off" placeholder="请输入关键字" class="el-input__inner">
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
                         </div>
                         <button type="button" class="el-button el-button--default search-btn_mWh2N">
-                            <!----><i class="el-icon-search"></i>
-                            <!---->
+                            <i class="el-icon-search"></i>
                         </button>
                     </div>
                 </menu>
@@ -117,23 +88,25 @@
                         <div class="filter_container">
                             <div class="industry_filter filter">
                                 <div class="label">已选条件</div>
-                                <div class="value_wrapper"><a href="/exhibition-0-0-1-0-0-0-1/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><span class="checked-tag el-tag el-tag--small el-tag--light">
-              中国
-            <i class="el-tag__close el-icon-close"></i></span></a>
+                                <div class="value_wrapper">
+                                    <a href="/exhibition-0-0-1-0-0-0-1/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active">
+                                        <span class="checked-tag el-tag el-tag--small el-tag--light">中国<i class="el-tag__close el-icon-close"></i></span>
+                                    </a>
                                 </div>
                             </div>
                             <div class="industry_filter filter" style="display:;">
                                 <div class="label">行业</div>
                                 <div class="industry_checkbox value_wrapper">
-                                    <div role="radiogroup" class="el-radio-group"> <span v-for="cateVal in categoryList">
-
-                    <a href="/" :title="cateVal.title"><label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                            <input type="radio" aria-hidden="true" tabindex="-1"
-                                                   value="16" class="el-radio__original">
-                                            </span><span class="el-radio__label">{{ cateVal.title }}</span>
-                                            </label>
+                                    <div role="radiogroup" class="el-radio-group">
+                                        <span v-for="cateVal in categoryList">
+                                            <a href="/" :title="cateVal.title">
+                                                <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
+                                                <input type="radio" aria-hidden="true" tabindex="-1"
+                                                       value="16" class="el-radio__original">
+                                                </span><span class="el-radio__label">{{ cateVal.title }}</span>
+                                                </label>
                                             </a>
-                                            </span>
+                                        </span>
                                     </div>
                                     <div role="radiogroup" class="el-radio-group"></div>
                                 </div>
@@ -142,20 +115,16 @@
                                 <div class="label">区域</div>
                                 <div class="area_checkbox value_wrapper">
                                     <div role="radiogroup" class="el-radio-group">
-                                        <a href="/exhibition-0-0-1-0-0-0-1/" aria-current="page" title="国内展会(含港澳台)" class="nuxt-link-exact-active nuxt-link-active">
+                                        <a href="#" aria-current="page" title="国内展会(含港澳台)" class="nuxt-link-exact-active nuxt-link-active">
                                             <label role="radio" aria-checked="true" tabindex="0" class="el-radio is-checked" style="margin:0 24px 24px 0;"><span class="el-radio__input is-checked"><span class="el-radio__inner"></span>
                                                     <input type="radio" aria-hidden="true" tabindex="-1" value="0" checked="checked" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                国内展会(含港澳台)
-                                                <!----></span>
+                                                    </span><span class="el-radio__label">国内展会(含港澳台)<!----></span>
                                             </label>
                                         </a>
                                         <a href="/exhibition-0-0-0-0-0-0-1/" title="国际展会">
                                             <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
                                                     <input type="radio" aria-hidden="true" tabindex="-1" value="1" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                国际展会
-                                                <!----></span>
+                                                    </span><span class="el-radio__label">国际展会<!----></span>
                                             </label>
                                         </a>
                                     </div>
@@ -169,56 +138,13 @@
                                                 <input type="radio" aria-hidden="true" tabindex="-1" value="0" checked="checked" class="el-radio__original">
                                                 </span><span class="el-radio__label">全部<!----></span>
                                         </label>
-                                        <a href="/exhibition-0-0-1-0-0-202301-1/" title="2023年01月展会" rel="nofollow">
+                                        <a href="/" title="2023年01月展会" rel="nofollow">
                                             <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
                                                     <input type="radio" aria-hidden="true" tabindex="-1" value="202301" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                2023年01月
-                                                <!----></span>
+                                                    </span><span class="el-radio__label">2023年01月<!----></span>
                                             </label>
                                         </a>
-                                        <a href="/exhibition-0-0-1-0-0-202302-1/" title="2023年02月展会" rel="nofollow">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="202302" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                2023年02月
-                                                <!----></span>
-                                            </label>
-                                        </a>
-                                        <a href="/exhibition-0-0-1-0-0-202303-1/" title="2023年03月展会" rel="nofollow">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="202303" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                2023年03月
-                                                <!----></span>
-                                            </label>
-                                        </a>
-                                        <a href="/exhibition-0-0-1-0-0-202304-1/" title="2023年04月展会" rel="nofollow">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="202304" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                2023年04月
-                                                <!----></span>
-                                            </label>
-                                        </a>
-                                        <a href="/exhibition-0-0-1-0-0-202305-1/" title="2023年05月展会" rel="nofollow">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="202305" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                2023年05月
-                                                <!----></span>
-                                            </label>
-                                        </a>
-                                        <a href="/exhibition-0-0-1-0-0-202306-1/" title="2023年06月展会" rel="nofollow">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="202306" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                2023年06月
-                                                <!----></span>
-                                            </label>
-                                        </a> <span class="el-radio" style="margin-bottom:27px;">
-              更多
-              <i class="iconfont el-icon-arrow-down"></i></span>
+                                        <!--<span class="el-radio" style="margin-bottom:27px;">更多<i class="iconfont el-icon-arrow-down"></i></span>-->
                                     </div>
                                 </div>
                             </div>
@@ -230,133 +156,32 @@
                                                 <input type="radio" aria-hidden="true" tabindex="-1" value="0" class="el-radio__original">
                                                 </span><span class="el-radio__label">全部<!----></span>
                                         </label>
-                                        <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
+
+                                        <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"  v-for="dataVal in citylist">
+                                            <span class="el-radio__input"><span class="el-radio__inner"></span>
                                                 <input type="radio" aria-hidden="true" tabindex="-1" value="11" class="el-radio__original">
-                                                </span><span class="el-radio__label">
-              北京
-                                            <!----></span>
+                                                </span><span class="el-radio__label">北京<!----></span>
                                         </label>
-                                        <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                <input type="radio" aria-hidden="true" tabindex="-1" value="26" class="el-radio__original">
-                                                </span><span class="el-radio__label">
-              香港
-                                            <!----></span>
-                                        </label>
-                                        <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                <input type="radio" aria-hidden="true" tabindex="-1" value="27" class="el-radio__original">
-                                                </span><span class="el-radio__label">
-              澳门
-                                            <!----></span>
-                                        </label>
-                                        <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                <input type="radio" aria-hidden="true" tabindex="-1" value="28" class="el-radio__original">
-                                                </span><span class="el-radio__label">
-              台湾
-                                            <!----></span>
-                                        </label>
-                                        <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                <input type="radio" aria-hidden="true" tabindex="-1" value="519" class="el-radio__original">
-                                                </span><span class="el-radio__label">
-              上海
-                                            <!----></span>
-                                        </label>
-                                        <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                <input type="radio" aria-hidden="true" tabindex="-1" value="520" class="el-radio__original">
-                                                </span><span class="el-radio__label">
-              深圳
-                                            <!----></span>
-                                        </label>
-                                        <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                <input type="radio" aria-hidden="true" tabindex="-1" value="523" class="el-radio__original">
-                                                </span><span class="el-radio__label">
-              天津
-                                            <!----></span>
-                                        </label>
-                                        <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                <input type="radio" aria-hidden="true" tabindex="-1" value="524" class="el-radio__original">
-                                                </span><span class="el-radio__label">
-              重庆
-                                            <!----></span>
-                                        </label>
+
                                         <!---->
                                     </div>
                                 </div>
+
                                 <div class="city_checkbox value_wrapper" style="display:;">
                                     <div role="radiogroup" class="el-radio-group">
                                         <a href="/exhibition-0-0-1-0-0-0-1/" aria-current="page" title="展会" class="nuxt-link-exact-active nuxt-link-active">
                                             <label role="radio" aria-checked="true" tabindex="0" class="el-radio is-checked" style="margin:0 24px 24px 0;"><span class="el-radio__input is-checked"><span class="el-radio__inner"></span>
                                                     <input type="radio" aria-hidden="true" tabindex="-1" value="0" checked="checked" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                全部
-                                                <!----></span>
+                                                    </span><span class="el-radio__label">全部<!----></span>
                                             </label>
                                         </a>
-                                        <a href="/exhibition-0-0-1-11-0-0-1/" title="北京展会">
+                                        <a href="/" title="北京展会"  v-for="dataVal in citylist">
                                             <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="11" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                北京
-                                                <!----></span>
+                                                    <input type="radio" aria-hidden="true" tabindex="-1" :value="dataVal.id" class="el-radio__original">
+                                                    </span><span class="el-radio__label">{{ dataVal.name }}<!----></span>
                                             </label>
                                         </a>
-                                        <a href="/exhibition-0-0-1-26-0-0-1/" title="香港展会">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="26" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                香港
-                                                <!----></span>
-                                            </label>
-                                        </a>
-                                        <a href="/exhibition-0-0-1-27-0-0-1/" title="澳门展会">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="27" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                澳门
-                                                <!----></span>
-                                            </label>
-                                        </a>
-                                        <a href="/exhibition-0-0-1-28-0-0-1/" title="台湾展会">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="28" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                台湾
-                                                <!----></span>
-                                            </label>
-                                        </a>
-                                        <a href="/exhibition-0-0-1-519-0-0-1/" title="上海展会">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="519" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                上海
-                                                <!----></span>
-                                            </label>
-                                        </a>
-                                        <a href="/exhibition-0-0-1-520-0-0-1/" title="深圳展会">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="520" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                深圳
-                                                <!----></span>
-                                            </label>
-                                        </a>
-                                        <a href="/exhibition-0-0-1-523-0-0-1/" title="天津展会">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="523" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                天津
-                                                <!----></span>
-                                            </label>
-                                        </a>
-                                        <a href="/exhibition-0-0-1-524-0-0-1/" title="重庆展会">
-                                            <label role="radio" tabindex="-1" class="el-radio" style="margin:0 24px 24px 0;"><span class="el-radio__input"><span class="el-radio__inner"></span>
-                                                    <input type="radio" aria-hidden="true" tabindex="-1" value="524" class="el-radio__original">
-                                                    </span><span class="el-radio__label">
-                重庆
-                                                <!----></span>
-                                            </label>
-                                        </a> <span class="el-radio" style="margin-bottom:27px;">
-              更多
-              <i class="iconfont el-icon-arrow-down"></i></span>
+                                        <!--<span class="el-radio" style="margin-bottom:27px;">更多<i class="iconfont el-icon-arrow-down"></i></span>-->
                                     </div>
                                 </div>
                             </div>
@@ -394,7 +219,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="exh_list">
+                    <div class="exh_list" id="contentList">
                         <div class="goods-item-container goods_exh" v-for="dataVal in recommendList">
                             <div class="exh_image" data-v-1d86f310>
                                 <a href="/" :title="dataVal.title" target="_blank" data-v-1d86f310>
@@ -439,34 +264,18 @@
                             </div>
                         </div>
 
-                    <div class="ssr-pager" data-v-05d6568e>
-                        <div class="pager-box" data-v-05d6568e>
-                            <button type="button" class="btn btn-prev disabled" data-v-05d6568e>上一页</button>
-                            <div class="pager-ul" data-v-05d6568e><a href="javascript:void(0)" rel="nofollow" class="number active" data-v-05d6568e>
-                                1
-                            </a>  <a href="/exhibition-0-0-1-0-0-0-2/" rel="nofollow" class="number" data-v-05d6568e>
-                                2
-                            </a>  <a href="/exhibition-0-0-1-0-0-0-3/" rel="nofollow" class="number" data-v-05d6568e>
-                                3
-                            </a><a href="/exhibition-0-0-1-0-0-0-4/" rel="nofollow" class="number" data-v-05d6568e>
-                                4
-                            </a><a href="/exhibition-0-0-1-0-0-0-5/" rel="nofollow" class="number" data-v-05d6568e>
-                                5
-                            </a><a href="/exhibition-0-0-1-0-0-0-6/" rel="nofollow" class="number" data-v-05d6568e>
-                                6
-                            </a><a href="/exhibition-0-0-1-0-0-0-7/" rel="nofollow" class="number" data-v-05d6568e>
-                                7
-                            </a><a href="/exhibition-0-0-1-0-0-0-8/" rel="nofollow" class="number" data-v-05d6568e>
-                                8
-                            </a>
-                                <!---->
-                                <!---->
-                            </div> <a href="/exhibition-0-0-1-0-0-0-2/" rel="nofollow" class="btn btn-next" data-v-05d6568e>
-                            下一页
-                        </a>
-                            <div class="pager-jump" data-v-05d6568e>前往
-                                <input type="number" min="1" max="192" value="1" class="jump-input" data-v-05d6568e>页</div>
-                            <button type="button" class="btn btn-jump" data-v-05d6568e>确定</button>
+                    <div class="ssr-pager" style="width: 100%;">
+                        <div class="pager-box">
+                            <button type="button" class="btn btn-prev"  @click="perPage">上一页</button>
+                            <div class="pager-ul">
+                                <!--<a href="javascript:void(0)" rel="nofollow" class="number active">1</a>-->
+                                <a href="#contentList" rel="nofollow" class="number"  v-for="(page,index) in pageNumbers" :key="index" :class="{ 'active': page === pageData.pageNo }" @click="currentPage(page)">{{ page }}</a>
+                            </div>
+                            <a href="#contentList" rel="nofollow" class="btn btn-next"  @click="nextPage" :class="{ disabled: disabledNext }">下一页</a>
+
+                            <span class="common-pagination__count">共{{ pageData.pageTotal }}页</span>
+                            <!--<div class="pager-jump">前往<input type="number" min="1" max="192" value="1" class="jump-input">页</div>
+                            <button type="button" class="btn btn-jump">确定</button>-->
                         </div>
                     </div>
                     <!---->
@@ -667,15 +476,64 @@
                 message: 'Hello Vue!',
                 items: [{ message: 'Foo' }, { message: 'Bar' }],
                 categoryList: [],
-                recommendList: []
+                citylist: [],
+                recommendList: [],
+                total: 0,
+                pageSize: 8,
+                pnum: 0,
+                // page:1,
+                allpage: 0,
+                totalnum: 0,
+                pageNumbers: [],
+                // title: '',
+                pageData : {
+                    pageNo: 1,
+                    pageTotal: 20,
+                },
+                urlList: {
+                    index: '/',
+                    huizhan: '/huizhan.html',
+                }
+            }
+        },
+        computed:{
+             pageCollege :function(){
+                let pageno = this.pageData.pageNo
+                let pagetotal = this.pageData.pageTotal
+
+                 console.log('总页数'+pagetotal)
+                 console.log('当前页'+pageno)
+
+                 this.getExlist()
+
+                if(pagetotal < 7){
+                    return pagetotal
+                }
+                if(pageno <= 5){
+                    this.pageNumbers =  [1,2,3,4,5,'...',pagetotal]
+                }else if(pageno > pagetotal - 5){
+                    console.log('222')
+                    this.pageNumbers =  [1,'...',pagetotal-4,pagetotal-3,pagetotal-2,pagetotal-1,pagetotal]
+                }else{
+                    console.log('333')
+                    this.pageNumbers =  [1,'...',pageno-1,pageno,pageno+1,'...',pagetotal]
+                }
+
+            },
+            //判断下面的条数
+             pageNumber : function(){
+                 return this.pageCollege()
             }
         },
         mounted() {
-            console.log(1)
-            this.pageChange(1);//首次加载第一页
+            this.pageChange();//首次加载第一页
+
+            this.pageCollege()
+
         },
         methods: {
             pageChange: function (pageNo) {
+
                 //翻页会触发此事件
                 axios({
                     url: "http://linfeng.988cj.com/api/cgtree",
@@ -684,19 +542,19 @@
                         'Content-Type': 'application/json; charset=utf-8'
                     },
                     data: {
-                        pageNo: pageNo,
-                        pageSize: this.pageSize
+
                     }
                 }).then(response => (this.pageInfo = response.data)).
                 then((response) => {
                     this.categoryList = response.data.listdata
-                    console.log(response.data.listdata);
                 }).catch((error) => { // 请求失败处理
                     console.log(error);
                 });
 
+                this.getExlist()
+
                 axios({
-                    url: "http://linfeng.988cj.com/api/exlist",
+                    url: "http://linfeng.988cj.com/api/citylist",
                     method: "post",
                     headers: {
                         'Content-Type': 'application/json; charset=utf-8'
@@ -706,13 +564,71 @@
                     }
                 }).then(response => (this.pageInfo = response.data)).
                 then((response) => {
-                    this.recommendList = response.data.listdata
+                    this.citylist = response.data.listdata
                 }).catch((error) => { // 请求失败处理
                     console.log(error);
                 });
+            },
+            getExlist:function (){
+                axios({
+                    url: "http://linfeng.988cj.com/api/exlist",
+                    method: "post",
+                    headers: {
+                        'Content-Type': 'application/json; charset=utf-8'
+                    },
+                    data: {
+                        page: this.pageData.pageNo,
+                        limit: this.pageSize
+                    }
+                }).then(response => (this.pageInfo = response.data)).
+                then((response) => {
+                    this.recommendList = response.data.listdata
+                    this.totalnum = response.data.totalnum
+
+                    this.pageData.pageTotal = Math.ceil(response.data.totalnum / this.pageSize)
+
+                    console.log(this.totalnum);
+                }).catch((error) => { // 请求失败处理
+                    console.log(error);
+                });
+            },
+            //上一页的方法
+            perPage:function (){
+                if(this.pageData.pageNo === 1){
+                    this.pageData.pageNo = 1
+                }else{
+                    this.pageData.pageNo = this.pageData.pageNo - 1
+                }
+                this.pageCollege()
+            },
+            //下一页的方法
+            nextPage:function (){
+                console.log(this.pageData.pageNo,this.pageData.pageTotal);
+                if(this.pageData.pageNo == this.pageData.pageTotal){
+                    this.pageData.pageNo = this.pageData.pageTotal
+                }else{
+                    this.pageData.pageNo = this.pageData.pageNo + 1
+                }
+                this.pageCollege()
+            },
+            //点击确定的一页
+            currentPage:function (page){
+                console.log(page)
+                if(page === '...'){
+                    return ;
+                }else{
+                    this.pageData.pageNo = page
+                    this.pageCollege()
+                }
             }
+
+
+
+
         }
     }).mount('#appContent')
+
+
 </script>
 
 </body>

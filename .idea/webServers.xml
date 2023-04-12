@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ff39e296-9cc8-4e68-9579-f78edc555ad1" name="onlne" url="http://root">
+        <fileTransfer rootFolder="/home/pc988/" accessType="SFTP" host="120.27.9.5" port="22" sshConfigId="5576da55-3efe-4f6f-9f90-dd4e179fc124" sshConfig="root@120.27.9.5:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
